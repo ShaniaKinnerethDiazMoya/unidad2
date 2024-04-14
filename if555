@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char letra;
+    
+    printf("Ingrese un caracter: ");
+    scanf(" %c", &letra);
+    
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' ||
+        letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+        printf("El caracter ingresado es una vocal.\n");
+    } else {
+        printf("El caracter ingresado no es una vocal.\n");
+    }
+    
+    return 0;
+}
