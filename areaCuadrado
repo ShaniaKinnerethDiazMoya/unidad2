@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float lado;
+    printf("Ingrese el lado del cuadrado: ");
+    scanf("%f", &lado);
+    
+    float area = lado * lado;
+    printf("El área del cuadrado es: %.2f\n", area);
+    
+    return 0;
+}
