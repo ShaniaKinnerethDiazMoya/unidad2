@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int altura = 5;
+    for (int i = altura; i >= 1; --i) {
+        for (int espacio = 0; espacio < altura - i; ++espacio) {
+            printf("  ");
+        }
+        for (int j = i; j <= 2 * i - 1; ++j) {
+            printf("* ");
+        }
+        for (int j = 0; j < i - 1; ++j) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
