@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+float calcularVolumenPrismaRectangular(float base, float altura, float profundidad) {
+    return base * altura * profundidad;
+}
+
+int main() {
+    float base, altura, profundidad;
+    printf("Ingrese la base del prisma rectangular: ");
+    scanf("%f", &base);
+    printf("Ingrese la altura del prisma rectangular: ");
+    scanf("%f", &altura);
+    printf("Ingrese la profundidad del prisma rectangular: ");
+    scanf("%f", &profundidad);
+    printf("El volumen del prisma rectangular es: %.2f\n", calcularVolumenPrismaRectangular(base, altura, profundidad));
+    return 0;
+}
