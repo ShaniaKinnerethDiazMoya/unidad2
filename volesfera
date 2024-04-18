@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+float calcularVolumenEsfera(float radio) {
+    return (4.0 / 3.0) * PI * radio * radio * radio;
+}
+
+int main() {
+    float radio;
+    printf("Ingrese el radio de la esfera: ");
+    scanf("%f", &radio);
+    printf("El volumen de la esfera es: %.2f\n", calcularVolumenEsfera(radio));
+    return 0;
+}
