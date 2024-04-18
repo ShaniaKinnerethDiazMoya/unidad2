@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+float calcularVolumenCilindro(float radio, float altura) {
+    return PI * radio * radio * altura;
+}
+
+int main() {
+    float radio, altura;
+    printf("Ingrese el radio del cilindro: ");
+    scanf("%f", &radio);
+    printf("Ingrese la altura del cilindro: ");
+    scanf("%f", &altura);
+    printf("El volumen del cilindro es: %.2f\n", calcularVolumenCilindro(radio, altura));
+    return 0;
+}
