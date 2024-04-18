@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+float calcularVolumenCono(float radio, float altura) {
+    return (1.0 / 3.0) * PI * radio * radio * altura;
+}
+
+int main() {
+    float radio, altura;
+    printf("Ingrese el radio del cono: ");
+    scanf("%f", &radio);
+    printf("Ingrese la altura del cono: ");
+    scanf("%f", &altura);
+    printf("El volumen del cono es: %.2f\n", calcularVolumenCono(radio, altura));
+    return 0;
+}
