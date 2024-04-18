@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+float calcularVolumenCubo(float lado) {
+    return lado * lado * lado;
+}
+
+int main() {
+    float lado;
+    printf("Ingrese la longitud del lado del cubo: ");
+    scanf("%f", &lado);
+    printf("El volumen del cubo es: %.2f\n", calcularVolumenCubo(lado));
+    return 0;
+}
