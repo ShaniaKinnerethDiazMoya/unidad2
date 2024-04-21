@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    printf("Ingresa una cadena: ");
+    scanf("%s", str);
+    printf("La longitud de la cadena es: %lu\n", strlen(str));
+    return 0;
+}
