@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Hello, world!";
+    char target = 'o';
+    size_t len = strlen(str);
+    int count = 0;
+    for (size_t i = 0; i < len; i++) {
+        if (str[i] == target) {
+            count++;
+        }
+    }
+    printf("El carácter '%c' aparece %d veces en la cadena.\n", target, count);
+    return 0;
+}
