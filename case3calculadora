@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    char operator = '+';
+    double num1 = 10.5, num2 = 5.2, result;
+
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+        default:
+            printf("Operador inválido\n");
+            return 1;
+    }
+
+    printf("El resultado es: %.2lf\n", result);
+    return 0;
+}
