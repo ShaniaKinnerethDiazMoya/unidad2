@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char password[] = "secreto";
+    char input[20];
+    
+    do {
+        printf("Ingrese la contraseña: ");
+        scanf("%s", input);
+    } while (strcmp(input, password) != 0);
+    
+    printf("¡Contraseña correcta! Acceso concedido.\n");
+    
+    return 0;
+}
