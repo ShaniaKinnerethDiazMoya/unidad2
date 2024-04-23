@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(0));
+    int numero_aleatorio = rand() % 100 + 1;
+    int intento, intentos_realizados = 0;
+    
+    printf("Bienvenido al juego de adivinanza. Adivina el número entre 1 y 100.\n");
+    
+    do {
+        printf("Intenta adivinar: ");
+        scanf("%d", &intento);
+        intentos_realizados++;
+        
+        if (intento > numero_aleatorio) {
+            printf("Muy alto. Intenta de nuevo.\n");
+        } else if (intento < numero_aleatorio) {
+            printf("Muy bajo. Intenta de nuevo.\n");
+        } else {
+            printf("¡Felicidades! Adivinaste el número %d en %d intentos.\n", numero_aleatorio, intentos_realizados);
+        }
+    } while (intento != numero_aleatorio);
+    
+    return 0;
+}
