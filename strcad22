@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char texto[50] = "Este es un ";
+    char complemento[] = "ejemplo.";
+    
+    strcat(texto, complemento);
+    printf("Texto completo: %s\n", texto);
+    
+    return 0;
+}
