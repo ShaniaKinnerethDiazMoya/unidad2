@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int edad;
+    
+    do {
+        printf("Por favor, ingrese su edad: ");
+        scanf("%d", &edad);
+    } while (edad <= 0); // Se asegura de que la edad sea un número positivo
+    
+    printf("Su edad es: %d años.\n", edad);
+    
+    return 0;
+}
