@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char destino[50] = "Hola ";
+    char fuente[] = "mundo!";
+    
+    strcat(destino, fuente);
+    printf("Cadena concatenada: %s\n", destino);
+    
+    return 0;
+}
